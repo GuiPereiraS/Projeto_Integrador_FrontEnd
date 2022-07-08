@@ -45,7 +45,7 @@ const SignIn: React.FC = () => {
                 
                 addToast({
                     type: 'success',
-                    title: 'Login realizado com sucesso',
+                    title: 'Login realizado com sucesso.',
                     description: '',
                 });
 
