@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import SignInBackground from '../../assets/login.png';
-import { cover, shade } from 'polished';
-import { url } from 'inspector';
-import { ClientRequest } from 'http';
+import { shade } from 'polished';
+
 
 export const Container  = styled.div`
         height: 100vh;
@@ -30,42 +29,7 @@ export const Content = styled.div`
             color: rgba(255, 144, 0, 1);
         }
     
-        input {
-            background: #FFFFFF;
-            border-radius: 10px;
-            border: 2px solid #FFFFFF;
-            padding: 16px;
-            width: 100%;
-            /*color: #f4ede8; */
-
-            &::placeholder{
-                color:#666360;
-            }
-
-            & + input{
-            margin-top: 8px;
-            }
-        
-        }
-        
-        Buttom {
-            background: rgba(255, 144, 0, 1);
-            height: 56px;
-            border-radius: 10px;
-            border: 0;
-            padding: 0 16px;
-            color: rgba(255, 255, 255, 1);
-            width: 100%;
-            font-weight: 500;
-            margin-top: 16px;
-            transition: background-color 0.2s;
-
-            &:hover {
-                background: ${shade(0.1, 'rgba(255, 144, 0, 1)')}
-            }
-        }
-
-        a {
+         a {
             color: rgba(255, 144, 0, 1);
             display: block;
             margin-top: 24px;
